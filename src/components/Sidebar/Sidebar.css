@@ -1,0 +1,115 @@
+/* Sidebar.css */
+.sidebar {
+    width: 180px;
+    background-color: #f9f9f9;
+    height: 100vh;
+    position: fixed;
+    top: 60px;
+    left: 0px;
+    padding-top: 20px;
+    overflow-y: auto;
+}
+
+.shortcut-link {
+    padding: 0 25px;
+}
+
+.side-link {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.side-link:hover {
+    background-color: #e5e5e5;
+}
+
+.side-link img {
+    width: 30px;
+    margin-right: 15px;
+    padding: 0 15px;
+}
+
+.side-link p {
+    font-size: 20px;
+    margin: 0;
+}
+
+.subscribers {
+    padding: 15px 0px;
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+}
+.subscribers h3 {
+    color: #737373;
+}
+.subscribe-link {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+.subscribe-link:hover {
+    background-color: #e5e5e5;
+}
+
+.subscribe-link img {
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.subscribe-link p {
+    font-size: 16px;
+    margin: 0;
+}
+
+
+.small-sidebar {
+    width: 60px;
+}
+
+
+.small-sidebar p,
+.small-sidebar h3 {
+    display: none;
+}
+.small-sidebar .subscribe-link img {
+padding: 0 15px;
+}
+.small-sidebar .subscribe-link {
+    padding: 10px 0;
+    }
+
+    .side-link.active {
+        border-bottom: 3px solid red;
+      }
+      
+
+/* Responsive design */
+@media (max-width: 900px) {
+    .sidebar {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 0;
+    }
+    
+    .shortcut-link, .subscribers {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .side-link, .subscribe-link {
+        width: 45%;
+    }
+}
